@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+   <header>
+      <h1 class="text-6xl text-center mt-8"> Welcom
+      <span class="font-extrabold text-green-900"> bangladesh-bank-account </span></h1>
+   </header>
+   <main class=" w-3/4 mx-auto">
+        <section class="mt-11">
+         <div class="grid grid-cols-3 gap-4 ">
+            <div class="bg-red-300 p-8 rounded ">
+               <h3 class="text-3xl">Deposit</h3>
+               <h4 class="text-5xl">$<samp id="deposit-total">00</samp></h4>
+            </div>
+            <div class="bg-lime-300 p-8 rounded ">
+               <h3 class="text-3xl">Withdraw</h3>
+               <h4 class="text-5xl">$<span id="withdraw-total">00</span></h4>
+            </div>
+            <div class="bg-indigo-300 p-8 rounded ">
+               <h3 class="text-3xl">Balance</h3>
+               <h4 class="text-5xl">$<samp id="balance-total">00</samp></h4>
+            </div>
+         </div>
+        </section>
+        <!--deposit and withdrow-->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+               <!--deposit -->
+                <div class="bg-green-200 p-8 rounded">
+                   <h3 class="text-2xl">plz Deposit</h3>
+                   <div>
+                     <input id="deposit-input" class="border-4 border-orange-600 rounded block w-3/4 mb-4 px-2" 
+                     type="text" placeholder="$ deposit-amount">
+                      <button id="deposit-button" class="bg-sky-500 px-2 rounded py-1 text-white font-medium">Deposit</button>
+                  </div>    
+                </div>
+                <!-- withdrow-->
+                <div class="bg-orange-300 p-8 rounded">
+                  <h3 class="text-2xl">plz Withdraw</h3>
+                  <div>
+                    <input id="withdrow-input" class="border-4 border-orange-600 rounded block w-3/4 mb-4 px-2" 
+                    type="text" placeholder="$ Withdraw-amount">
+                     <button id="withdrow-button"
+                      class="bg-sky-500 px-2 rounded py-1 text-white font-medium">Withdraw</button>
+                 </div>    
+               </div>
+            </div>
+        </section>
+   </main>
+   <script src="js/bangkin.js"></script>
+</body>
+
+</html>
